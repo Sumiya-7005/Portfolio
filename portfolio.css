@@ -1,0 +1,360 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* HEADER */
+header.myHeader{
+    background: url("../images/WhatsApp\ Image\ 2022-01-19\ at\ 11.43.38\ PM.jpeg");
+    height: 600px;
+    background-size: cover;
+}
+ul.list li.dropDownIcon a{
+    display: none;
+}
+header.myHeader nav.myNav ul.list li{
+    display: inline-block;
+    font-size: 25px;
+}
+header.myHeader nav.myNav ul.list li.left a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 10px 20px;
+}
+header.myHeader nav.myNav ul.list li.right a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 25px;
+    color:black;
+    padding: 10px;
+    margin: 10px 20px;
+}
+header.myHeader nav.myNav ul.list li.left{
+    float: left;
+}
+header.myHeader nav.myNav ul.list li.right{
+    float: right;
+}
+header.myHeader nav.myNav ul.list::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+header.myHeader div.head{
+    text-align: center;
+}
+header.myHeader h1.myName{
+    text-align: center;
+    color:white;
+    font-size: 60px;
+    padding: 10px;
+    margin-top: 150px;
+}
+header.myHeader h3.mySkills{
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    padding: 10px;
+}
+header.myHeader a.probut{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    padding: 15px;
+}
+header.myHeader nav.myNav ul.list li.right a:hover{
+    background-color:blue;
+    color: rgb(216, 152, 69);
+}
+header.myHeader nav.myNav ul.list li.left a:hover{
+    color: rgb(216, 152, 69);
+}
+div.head a.probut:hover{
+    color: rgb(216, 152, 69);
+    background-color: blue;
+}
+/* SECTION */
+section.about nav.abouthead h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+section.about nav.matpic nav.matter{
+    font-size: 30px;
+    width: 45%;
+    float:left;
+    line-height: 60px;
+}
+section.about nav.pic{
+    width :50%;
+    float: right;
+}
+section.about nav.matpic{
+    padding: 10px;
+    margin: 10px;
+}
+section.about nav.matpic a.port{
+display:inline-block;
+text-decoration: none;
+background-color: blue;
+color:white;
+border-radius: 25px;
+padding: 5px;
+margin: 10px;
+}
+section.about nav.matpic::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+section.icons div.academics{
+    float: left;
+    width: 25%;
+}
+section.icons div.certificates{
+    float: left;
+    width: 25%;
+}
+section.icons div.organisations{
+    float: left;
+    width: 25%;
+}
+section.icons div.itprojects{
+    float: left;
+    width: 25%;
+}
+section.icons::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+section.icons{
+text-align: center;
+padding: 5px;
+margin: 50px 10px;
+}
+section.icons p.read a.more{
+    text-decoration: none;
+    color: rgb(14, 14, 59);
+}
+section.icons h3{
+    color: chocolate;
+}
+section.whyme{
+    background-color:rgb(1, 1, 85) ; 
+}
+section.whyme h1{
+    text-align: center;
+    font-size: 50px;
+    color:lightseagreen;
+    padding-top: 50px;
+
+}
+section.whyme nav.whypic p.why{
+    color: white;
+    font-size: 20px;
+    padding: 50px;
+    margin: 5px;
+    line-height: 45px;
+    width: 40%;
+    float: left;
+    word-spacing: 5px;
+}
+section.whyme nav.whypic img.whyimg{
+    width: 45%;
+    float: right;
+    padding: 50px;
+    margin: 5px;
+    height: 400px;
+}
+section.whyme nav.whypic::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+/* FOOTER */
+footer h2{
+    padding: 10px;
+    color:darkblue;
+    font-size: 60px;
+}
+footer div.foot img.contactme{
+    width: 30%;
+    padding: 15px;
+}
+footer div.foot ul.contacts{
+    width: 50%;
+    float: right;
+    font-size: 25px;
+    padding-top: 50px;
+}
+footer div.foot::after{
+    display: block;
+    clear: both;
+    content: "";  
+}
+footer{
+    background-color:cornsilk;
+}
+footer div.foot ul.contacts a.call{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(6, 15, 88);
+    color: rgb(241, 237, 237);
+    border-radius: 25px;
+    padding: 15px;
+    margin: 15px;
+}
+ /* MOBILE RESPONSIVE */
+@media (max-width:500px){
+    header.myHeader{
+        background-position-x: center;
+    }
+    header.myHeader nav.myNav ul.list li.dropDownIcon{
+    display: block;
+    position: absolute;
+    }
+    header.myHeader nav.myNav ul.list li.dropDownIcon a{
+        display: inline-block;
+        color: azure;
+        text-decoration: none;
+    }
+    header.myHeader nav.myNav ul.list.Responsive{
+        position: absolute;
+        background-color: rgba(0,0,0,1);
+        padding: 10px;
+        height: 95vh;
+        width: 45vw;
+    }
+    header.myHeader nav.myNav ul.list.Responsive li.dropDownIcon{
+        float: left;
+    }
+    header.myHeader nav.myNav ul.list.Responsive li{
+        display: block;
+        float: none;
+    }
+    header.myHeader nav.myNav ul.list.Responsive li.left,header.myHeader nav.myNav ul.list.Responsive li.right{
+        padding: 5px;
+        margin: 15px;
+        margin-top: 50px;
+    }
+    header.myHeader nav.myNav ul.list li{
+        display: none;
+    }
+    header.myHeader div.head h1.myName{
+        font-size: 28px;
+    }
+    header.myHeader div.head h3{
+        font-size: 13px;
+        margin: 10px 0px;
+    }
+    header.myHeader div.head{
+        padding-top: 80px;
+    }
+    section.about div.matpic div.matter,section.about div.matpic div.pic img{
+        float: none;
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    /*section.about div.matpic a.port{
+        display: block;
+        text-align: center;
+    }*/
+    section.about div.matpic div.pic img{
+        float: none;
+        width:360px;
+        height: 100px;
+        padding-top: 10px;
+        padding-right: 30px;
+        margin-top: 30px;
+    }
+    section.icons div.academics{
+        float: none;
+        width: 100%;
+        margin: 5px 0px;
+        padding: 5px;
+    }
+    section.icons div.academics p.para1{
+        font-size: 20px;
+    }
+    section.icons div.certificates{
+        float: none;
+        width: 100%;
+        margin: 5px 0px;
+        padding: 5px;
+    }
+    section.icons div.certificates p.para2{
+        font-size: 20px;
+    }
+    section.icons div.organisations{
+        float: none;
+        width: 100%;
+        margin: 5px 0px;
+        padding: 5px;
+    }
+    section.icons div.organisations p.para3{
+        font-size: 20px;
+    }
+    section.icons div.itprojects{
+        float: none;
+        width: 100%;
+        margin: 5px 0px;
+        padding: 5px;
+    }
+    section.icons div.itprojects p.para4{
+        font-size: 20px;
+    }
+    section.whyme{
+        background-position-x: center;
+    }
+    section.whyme div.whypic{
+        float: none;
+    }
+    section.whyme div.whypic p.why{
+        font-size: 20px;
+        width: 100%;
+        line-height: 25px;
+        padding: 15px;
+        margin: 5px 0px;
+        word-spacing: normal;
+    }
+    section.whyme div.whypic img.whyimg{
+        width: 100%;
+        height: 400px;
+        padding: 10px;
+    }
+    footer{
+        background-position-x: center;
+    }
+    footer div.foot{
+        float: none;
+    }
+footer h2{
+    text-align: center;
+    font-size: 25px;
+}
+    footer div.foot img.contactme{
+        width: 100%;
+        padding-right: 40px;
+        margin: 15px 0px;
+    }
+    footer div.foot ul.contacts{
+        font-size: 20px;
+       text-align: center;
+       padding: 10px;
+        margin: 10px 0px;
+        width: 100%;
+    }
+}
